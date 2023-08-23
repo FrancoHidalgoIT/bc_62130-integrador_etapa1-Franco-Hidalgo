@@ -45,6 +45,24 @@ body {
         -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
         animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 
+        @media (max-width: 768px) {
+          font-size: 10vw;
+        }
+        
+        
+        @media (min-width: 320px) and (max-width: 425px) {
+          font-size: 12vw;
+          background-image: linear-gradient(rgb(4, 25, 108), rgb(16, 108, 255));  
+          background-size: 100% 4px;
+          background-repeat: no-repeat;
+          background-position: 100% 0%;
+          transition: background-size .7s, background-position .5s ease-in-out;
+          letter-spacing: 9px;
+          font-weight: lighter;
+        }
+
+
+      
         @-webkit-keyframes text-focus-in {
           0% {
             -webkit-filter: blur(12px);
@@ -70,7 +88,6 @@ body {
           } 
         }   
       }
-    
 
       
       h1:hover {
@@ -80,7 +97,6 @@ body {
         transition: background-position .5s, background-size .5s ease-in-out;
       
       }
-
 }
 
 .cards-container {
